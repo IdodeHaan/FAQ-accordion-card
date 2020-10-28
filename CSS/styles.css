@@ -1,12 +1,12 @@
 body {
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    text-align: center;
+    text-align: left;
     /* height: px; */
     /* padding-top: 130px; */
     width: 1440px;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: bold;
 }
 h1 {
     font-weight: 700;
@@ -26,7 +26,6 @@ h1 {
     height: 514px;
     display: inline-block;
     position: relative;
-    right: 34px;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-position: -570px -288px;
     background-clip: content-box;
@@ -47,12 +46,13 @@ h1 {
     z-index: 3;
 }
 .FAQ {
-    width: 459px;
+    width: 350px;
     /* height: 514px; */
     display: inline-block;
     text-align: left;
-    position: relative;
-    top: -145px;
+    position: absolute;
+    top: 180px;
+    left: 750px;
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -82,28 +82,27 @@ h1 {
     color: hsl(14, 88%, 65%);
   }
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    content: url(../images/icon-arrow-down.svg);
     float: right;
     margin-left: 5px;
   }
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: url(../images/icon-arrow-down.svg);
+    transform: rotate(180deg);
   }
 
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     color: hsl(240, 6%, 50%);
-    /* padding: 0 18px; */
+    padding: 0 18px;
     background-color: white;
-    /* display: none; */
+    display: none;
     overflow: hidden;
     border: solid;
     border-width: 0 0 1px 0;
     border-color: hsl(240, 5%, 91%);
-    max-height: 0;
-  transition: max-height 0.2s ease-out;
+    max-height: 4em;
+    transition: max-height 0.2s ease-out;
   }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
