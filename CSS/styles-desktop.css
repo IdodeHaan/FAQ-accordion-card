@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    text-align: left;
+    /* height: px; */
+    /* padding-top: 130px; */
+    width: 1440px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 30px;
+}
+.main {
+    background-color: white;
+    width: 926px;
+    height: 514px;
+    margin: 129px auto 129px 283px;
+    border-radius: 30px;
+}
+.images {
+    width: 394px;
+    height: 514px;
+    display: inline-block;
+    position: relative;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: -570px -288px;
+    background-clip: content-box;
+}
+#woman-img {
+    position: absolute;
+    right: 0px;
+    top: 77px;
+    /* object-fit: cover; */
+    clip: rect(auto auto auto 77px);
+    z-index: 2;
+}
+#box-img {
+    position: absolute;
+    left: -93px;
+    top: 215px;
+    /* object-fit: cover; */
+    z-index: 3;
+}
+.FAQ {
+    width: 350px;
+    /* height: 514px; */
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    top: 180px;
+    left: 750px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: hsl(240, 6%, 50%);
+    text-align: left;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-color: hsl(240, 5%, 91%);
+    outline: none;
+    /* transition: 0.4s; */
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active {
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+  }
+  .accordion:hover {
+    background-color: white;
+    color: hsl(14, 88%, 65%);
+  }
+  .accordion:after {
+    content: url(../images/icon-arrow-down.svg);
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: url(../images/icon-arrow-down.svg);
+    transform: rotate(180deg);
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    color: hsl(240, 6%, 50%);
+    padding: 0 18px 0 0;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-color: hsl(240, 5%, 91%);
+    max-height: 4em;
+    transition: max-height 0.2s ease-out;
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

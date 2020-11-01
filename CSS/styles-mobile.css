@@ -1,60 +1,63 @@
 body {
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     text-align: left;
-    /* height: px; */
-    /* padding-top: 130px; */
-    width: 1440px;
+    width: 375px;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    font-weight: bold;
 }
 h1 {
     font-weight: 700;
     font-size: 30px;
     color: hsl(237, 12%, 33%);
+    margin-top: 38px;
     margin-bottom: 30px;
 }
 .main {
     background-color: white;
-    width: 926px;
-    height: 514px;
-    margin: 129px auto 129px 283px;
+    width: 337px;
+    /* height: 543px; */
+    min-height: 543px;
+    padding-bottom: 48;
+    margin: 149px auto 87px auto;
     border-radius: 30px;
 }
 .images {
-    width: 394px;
-    height: 514px;
+    width: 240px;
+    height: 100px;
     display: inline-block;
     position: relative;
+    left: 50px;
     background-image: url("../images/bg-pattern-desktop.svg");
-    background-position: -570px -288px;
-    background-clip: content-box;
+    background-position: 0px -135px;
+    /* background-clip: content-box; */
+    background-size: 240px;
 }
 #woman-img {
+    width: 240px;
     position: absolute;
-    right: 0px;
-    top: 77px;
+    left: 0px;
+    top: -110px;
     /* object-fit: cover; */
-    clip: rect(auto auto auto 77px);
+    /* clip: rect(auto auto auto 77px); */
     z-index: 2;
 }
 #box-img {
     position: absolute;
-    left: -93px;
-    top: 215px;
+    left: -4px;
+    top: -39px;
+    width: 95px;
     /* object-fit: cover; */
     z-index: 3;
 }
 .FAQ {
-    width: 350px;
+    width: 337px;
     /* height: 514px; */
     display: inline-block;
-    text-align: left;
-    position: absolute;
-    top: 180px;
-    left: 750px;
+    text-align: center;
+    position: relative;
+    /* top: 180px;
+    left: 750px; */
 }
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: white;
     color: hsl(240, 6%, 50%);
@@ -62,7 +65,7 @@ h1 {
     font-weight: 400;
     cursor: pointer;
     padding: 18px 0;
-    width: 100%;
+    width: 279px;
     border: solid;
     border-width: 0 0 1px 0;
     border-color: hsl(240, 5%, 91%);
@@ -94,7 +97,8 @@ h1 {
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     color: hsl(240, 6%, 50%);
-    padding: 0 18px;
+    padding: 0 0 12px 0;
+    margin: 0 auto;
     background-color: white;
     display: none;
     overflow: hidden;
@@ -102,7 +106,9 @@ h1 {
     border-width: 0 0 1px 0;
     border-color: hsl(240, 5%, 91%);
     max-height: 4em;
+    width: 279px;
     transition: max-height 0.2s ease-out;
+    text-align: left;
   }
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); } */
